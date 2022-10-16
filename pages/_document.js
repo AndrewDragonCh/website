@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta name="title" content={fullPageTitle} />
         <meta name="description" content="AndrewDragon - YouTube Streamer and Content Creator" />
         <meta name="keywords" content="youtube, twitch, twitter" />
         <meta name="robots" content="index, follow" />
