@@ -18,8 +18,8 @@ export default function Error404() {
           </h1>
         </div>
 
-        <p onClick={() => router.push('/')} className={styles.description}>
-          <a href='/' target='_self' rel='prefetch noreferrer'>Server-side error occurred</a>
+        <p onClick={() => router.push('/')} className={`${styles.description} ${styles.link}`}>
+          Server-side error occurred
         </p>
       </main>
     </div>
