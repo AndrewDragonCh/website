@@ -19,7 +19,7 @@ export default function Error404() {
         </div>
 
         <p className={styles.description}>
-          Page not Found
+          <a href='https://www.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>Page not Found</a>
         </p>
       </main>
     </div>

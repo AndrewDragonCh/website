@@ -19,7 +19,7 @@ export default function Error404() {
         </div>
 
         <p className={styles.description}>
-          Server-side error occurred
+          <a href='https://www.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>Server-side error occurred</a>
         </p>
       </main>
     </div>
