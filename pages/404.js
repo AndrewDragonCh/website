@@ -1,5 +1,6 @@
 import Header from '../components/header'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import styles from '../styles/main.module.css'
 
 export default function Error404() {
@@ -18,8 +19,10 @@ export default function Error404() {
           </h1>
         </div>
 
-        <p onClick={() => router.push('/')} className={`${styles.description} ${styles.link}`}>
-          Page not Found
+        <p className={styles.description}>
+          <Link href="/" >
+            Page not Found
+          </Link>
         </p>
       </main>
     </div>
