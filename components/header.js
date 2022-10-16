@@ -30,7 +30,7 @@ export default function Header({pageTitle}) {
         <link rel='manifest' href='/manifest.webmanifest' />
         <link rel='shortcut icon' href='https://cdn.andrewdragon.dev/favicon.ico' />
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:url' content='https://www.andrewdragon.dev' />
+        <meta name='twitter:url' content='https://www.andrewdragon.dev/' />
         <meta name='twitter:title' content='AndrewDragon' />
         <meta name='twitter:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta name='twitter:creator' content='@AndrewDragonCh' />
@@ -38,7 +38,7 @@ export default function Header({pageTitle}) {
         <meta property='og:title' content='AndrewDragon' />
         <meta property='og:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta property='og:site_name' content='AndrewDragon' />
-        <meta property='og:url' content='https://www.andrewdragon.dev' />
+        <meta property='og:url' content='https://www.andrewdragon.dev/' />
       </Head>
       <div className="h-14 p-4 flex flex-row justify-between items-center bg-[#202020]">
         
