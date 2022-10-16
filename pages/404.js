@@ -18,7 +18,7 @@ export default function Error404() {
           </h1>
         </div>
 
-        <p className={styles.description}>
+        <p onClick={() => router.push('/')} className={styles.description}>
           <a href='/' target='_self' rel='prefetch noreferrer'>Page not Found</a>
         </p>
       </main>
