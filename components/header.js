@@ -40,9 +40,6 @@ export default function Header({pageTitle}) {
         <meta property='og:site_name' content='AndrewDragon' />
         <meta property='og:url' content='https://www.andrewdragon.dev/' />
       </Head>
-      <div className="h-14 p-4 flex flex-row justify-between items-center bg-[#202020]">
-        
-      </div>
     </div>
   )
 }

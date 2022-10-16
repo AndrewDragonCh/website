@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/header'
 import styles from '../styles/Home.module.css'
@@ -19,7 +18,7 @@ export default function Home() {
         </div>
 
         <p className={styles.description}>
-          YouTube Streamer and Content Creator
+          <a href='https://links.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>YouTube Streamer and Content Creator</a>
         </p>
       </main>
 
