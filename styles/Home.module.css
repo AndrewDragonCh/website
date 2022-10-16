@@ -108,6 +108,18 @@
   margin-left: 0.5rem;
 }
 
+.orange {
+  color: #F46904;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
