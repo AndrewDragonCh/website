@@ -1,30 +1,27 @@
-import Image from 'next/image'
 import Header from '../components/header'
+import { useRouter } from 'next/router'
 import styles from '../styles/main.module.css'
 
-export default function Home() {
+export default function Error404() {
+  const router = useRouter()
   return (
     <div className={styles.container}>
-      <Header pageTitle="Home" />
-      
+      <Header pageTitle="Error 404" />
+
       <main className={styles.main}>
         <div className={styles.head}>
           <h1 className={styles.title}>
-            Andrew
+            Error
           </h1>
           <h1 className={`${styles.title} ${styles.orange}`}>
-            Dragon
+            404
           </h1>
         </div>
 
         <p className={styles.description}>
-          <a href='https://links.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>YouTube Streamer and Content Creator</a>
+          Page not Found
         </p>
       </main>
-
-      {/* <footer className={styles.footer}>
-        
-      </footer> */}
     </div>
   )
 }
