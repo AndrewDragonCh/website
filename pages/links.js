@@ -19,32 +19,32 @@ export default function Error404() {
           </h1>
         </div>
 
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="/" >
             My Website
           </Link>
         </p>
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="https://go.andrewdragon.dev/f45" >
             YouTube
           </Link>
         </p>
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="https://go.andrewdragon.dev/fyx" >
             Discord
           </Link>
         </p>
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="https://go.andrewdragon.dev/pyd" >
             Twitter
           </Link>
         </p>
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="https://go.andrewdragon.dev/7mw" >
             GitHub
           </Link>
         </p>
-        <p className={styles.description}>
+        <p className={styles.links}>
           <Link href="https://go.andrewdragon.dev/w2o" >
             PcPartPicker
           </Link>
