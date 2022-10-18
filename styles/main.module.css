@@ -57,13 +57,14 @@
 }
 
 .links {
-  padding: 6px 0;
+  margin: 2px 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
 .links a {
-  padding: 4px 0;
+  margin: 0;
+  padding: 1rem 2rem;
   display: inline-block;
 }
 
