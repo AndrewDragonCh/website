@@ -1,5 +1,6 @@
 import Header from '../components/header'
 import styles from '../styles/main.module.css'
+import animate from 'animate.css'
 
 export default function Home() {
   return (
@@ -8,10 +9,10 @@ export default function Home() {
       
       <main className={styles.main}>
         <div className={styles.head}>
-          <h1 className={styles.title}>
+          <h1 className={`${styles.title} animate__animated animate__backInDown`}>
             Andrew
           </h1>
-          <h1 className={`${styles.title} ${styles.orange}`}>
+          <h1 className={`${styles.title} ${styles.orange} animate__animated animate__delay-2s animate__slideInRight`}>
             Dragon
           </h1>
         </div>
