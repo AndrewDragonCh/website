@@ -1,6 +1,6 @@
 import Header from '../components/header'
 import styles from '../styles/main.module.css'
-import animate from 'animate.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -18,7 +18,10 @@ export default function Home() {
         </div>
 
         <p className={styles.description}>
-          <a href='https://links.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>YouTube Streamer and Content Creator</a>
+          <Link href="/links" >
+            YouTube Streamer and Content Creator
+          </Link>
+          {/* <a href='https://links.andrewdragon.dev/' target='_blank' rel='noopener noreferrer'>YouTube Streamer and Content Creator</a> */}
         </p>
       </main>
 

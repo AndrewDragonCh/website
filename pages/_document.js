@@ -15,6 +15,7 @@ export default function Document() {
         <meta name='apple-mobile-web-app-capable' content='yes' />
         <meta name='apple-mobile-web-app-status-bar-style' content='default' />
         <meta name='apple-mobile-web-app-title' content='AndrewDragon' />
+        <link rel='apple-touch-icon' href='/icon-192x192.png' />
         <meta name='description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta name='format-detection' content='telephone=no' />
         <meta name='mobile-web-app-capable' content='yes' />
