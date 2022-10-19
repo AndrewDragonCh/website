@@ -8,7 +8,6 @@ export default function Document() {
         <meta name="keywords" content="youtube, twitch, twitter" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
         <meta name="language" content="English" />
         <link rel="icon" href="https://cdn.andrewdragon.dev/favicon.ico" />
         <meta name='application-name' content='AndrewDragon' />
