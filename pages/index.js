@@ -22,17 +22,17 @@ export default function Home() {
             YouTube Streamer and Content Creator
           </p>
           <div className={`${styles.linkgroup}`}>
-            <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+            <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
               <Link href="/links">
                 My Socials
               </Link>
             </p>
-            {/* <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+            {/* <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
               <Link href="/portfolio">
                 Things I've Made
               </Link>
             </p> */}
-            <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+            <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
               <Link href="/about">
                 About Me
               </Link>
