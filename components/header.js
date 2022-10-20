@@ -8,6 +8,8 @@ export default function Header({pageTitle}) {
   return (
     <Head>
       <title>{fullPageTitle}</title>
+      <meta property='og:title' content={`${fullPageTitle}`} />
+      <meta name='twitter:title' content={`${fullPageTitle}`} />
     </Head>
   )
 }

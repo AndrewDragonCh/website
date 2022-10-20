@@ -4,20 +4,11 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script
-          dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PWGKXT9');</script>`,
-          }} />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="AndrewDragon - YouTube Streamer and Content Creator" />
         <meta name="keywords" content="youtube, twitch, twitter" />
         <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
-        <link rel="icon" href="https://cdn.andrewdragon.dev/favicon.ico" />
         <meta name='application-name' content='AndrewDragon' />
         <meta name='apple-mobile-web-app-capable' content='yes' />
         <meta name='apple-mobile-web-app-status-bar-style' content='default' />
@@ -29,18 +20,25 @@ export default function Document() {
         <meta name='msapplication-TileColor' content='#FFFFFF' />
         <meta name='msapplication-tap-highlight' content='no' />
         <meta name='theme-color' content='#F46904' />
-        <link rel='manifest' href='/manifest.webmanifest' />
-        <link rel='shortcut icon' href='https://cdn.andrewdragon.dev/favicon.ico' />
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:url' content='https://www.andrewdragon.dev/' />
-        <meta name='twitter:title' content='AndrewDragon' />
         <meta name='twitter:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta name='twitter:creator' content='@AndrewDragonCh' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='AndrewDragon' />
         <meta property='og:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta property='og:site_name' content='AndrewDragon' />
         <meta property='og:url' content='https://www.andrewdragon.dev/' />
+        <link rel="icon" href="https://cdn.andrewdragon.dev/favicon.ico" />
+        <link rel='shortcut icon' href='https://cdn.andrewdragon.dev/favicon.ico' />
+        <link rel='manifest' href='/manifest.webmanifest' />
+        <script
+          dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-PWGKXT9');</script>`,
+          }} />
       </Head>
       <body>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER"></script>
