@@ -19,7 +19,7 @@ export default function Error404() {
         </div>
         <div className={`${styles.mainbody} animate__animated animate__delay-2s animate__fadeInUp`}>
           <p className={`${styles.subtitle} animate__animated animate__fadeInUp animate__delay-2s`}>
-            Hi, I'm AndrewDragon
+            Hi, I&#39;m AndrewDragon
           </p>
         </div>
       </main>
