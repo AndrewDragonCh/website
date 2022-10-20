@@ -14,13 +14,13 @@ export default function Error404() {
             Error
           </h1>
           <h1 className={`${styles.title} ${styles.orange} animate__animated animate__delay-1s animate__fadeInRight`}>
-            500
+            403
           </h1>
         </div>
         <div className={`${styles.mainbody} animate__animated animate__delay-2s animate__fadeInUp`}>
           <p className={`${styles.subtitle} animate__animated animate__fadeInUp animate__delay-2s`}>
             <Link href="/" >
-              Internal Server Error Occurred
+              Restricted Access
             </Link>
           </p>
         </div>
