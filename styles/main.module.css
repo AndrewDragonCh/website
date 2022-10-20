@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  --animate-delay: 0.8s;
+  --animate-duration: 0.8s;
 }
 
 .footer {
@@ -42,18 +44,25 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  line-height: 1.15;
+  padding: 0 2rem;
+}
+
+.description {
+  margin: 2rem 0;
+  line-height: 1.5;
+  font-size: 1.4rem;
 }
 
 .title,
-.description {
+.description,
+.subtitle {
   text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
 }
 
 .links {
@@ -130,6 +139,22 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.linkgroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+.linkPageGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 600px) {

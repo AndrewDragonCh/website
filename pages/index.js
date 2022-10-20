@@ -17,12 +17,28 @@ export default function Home() {
             Dragon
           </h1>
         </div>
-
-        <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
-          <Link href="/links">
+        <div className={`${styles.mainbody} animate__animated animate__delay-2s animate__fadeInUp`}>
+          <p className={`${styles.subtitle} animate__animated animate__fadeInUp animate__delay-2s`}>
             YouTube Streamer and Content Creator
-          </Link>
-        </p>
+          </p>
+          <div className={`${styles.linkgroup}`}>
+            <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+              <Link href="/links">
+                My Socials
+              </Link>
+            </p>
+            {/* <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+              <Link href="/portfolio">
+                Things I've Made
+              </Link>
+            </p> */}
+            <p className={`${styles.description} animate__animated animate__zoomIn animate__delay-2s`}>
+              <Link href="/about">
+                About Me
+              </Link>
+            </p>
+          </div>
+        </div>
       </main>
 
       {/* <footer className={styles.footer}>
