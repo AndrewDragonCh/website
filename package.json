@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "-r @newrelic/next next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@newrelic/next": "^0.3.1",
     "animate.css": "^4.1.1",
+    "newrelic": "^9.3.0",
     "next": "12.3.1",
     "next-sitemap": "^3.1.25",
     "react": "18.2.0",
