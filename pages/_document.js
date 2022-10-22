@@ -48,6 +48,21 @@ export default function Document() {
           __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
         }} />
+        <script dangerouslySetInnerHTML={{
+          __html: `<!-- Default Statcounter code for AndrewDragon https://www.andrewdragon.dev -->
+          <script type="text/javascript">
+          var sc_project=12808997; 
+          var sc_invisible=1; 
+          var sc_security="25afffe2"; 
+          </script>
+          <script type="text/javascript"
+          src="https://www.statcounter.com/counter/counter.js" async></script>
+          <noscript><div class="statcounter"><a title="free web stats"
+          href="https://statcounter.com/" target="_blank"><img class="statcounter"
+          src="https://c.statcounter.com/12808997/0/25afffe2/1/" alt="free web stats"
+          referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+          <!-- End of Statcounter Code -->`,
+        }} />
       </body>
     </Html>
   )
