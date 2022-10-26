@@ -6,7 +6,7 @@ import 'animate.css'
 export default function Error404() {
   return (
     <div className={styles.container}>
-      <Header pageTitle="Error 500" />
+      <Header pageTitle="Error 404" />
 
       <main className={styles.main}>
         <div className={styles.head}>
