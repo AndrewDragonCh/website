@@ -49,6 +49,25 @@ export default function Document() {
           __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
         }} />
+        <script id="statcounter-config" strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+          __html: `
+          var sc_project=12808997;
+          var sc_invisible=1;
+          var sc_security="25afffe2";`
+          }} />
+        <script id="statcounter-script" strategy="afterInteractive"
+        src="https://www.statcounter.com/counter/counter.js" async />
+        <noscript id="statcounter-noscript">
+          <div className="statcounter">
+            <a title="Web Analytics" href="https://statcounter.com/" target="_blank"
+            rel="noreferrer">
+              <img className="statcounter"
+              src="https://c.statcounter.com/12808997/0/25afffe2/1/" alt="Web Analytics"
+              referrerPolicy="no-referrer-when-downgrade" />
+            </a>
+          </div>
+        </noscript>
       </body>
     </Html>
   )
