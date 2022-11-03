@@ -52,6 +52,16 @@ export default function Error404() {
                 PcPartPicker
               </Link>
             </p>
+            <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
+              <Link href="https://go.andrewdragon.dev/zh1" >
+                MyAnimeList
+              </Link>
+            </p>
+            <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
+              <Link href="https://go.andrewdragon.dev/zh1" >
+                MangaDex
+              </Link>
+            </p>
           </div>
         </div>
       </main>
