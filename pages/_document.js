@@ -50,10 +50,7 @@ export default function Document() {
         }} />
         <script id="statcounter-config" strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-          __html: `
-          var sc_project=12808997;
-          var sc_invisible=1;
-          var sc_security="25afffe2";`
+          __html: `var sc_project=12808997;var sc_invisible=1;var sc_security="25afffe2";`
           }} />
         <script id="statcounter-script" strategy="afterInteractive"
         src="https://www.statcounter.com/counter/counter.js" async />
