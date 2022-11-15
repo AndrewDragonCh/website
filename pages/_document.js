@@ -46,8 +46,7 @@ export default function Document() {
         <Main />
         <NextScript />
         <script dangerouslySetInnerHTML={{
-          __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
+          __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
         }} />
         <script id="statcounter-config" strategy="afterInteractive"
           dangerouslySetInnerHTML={{

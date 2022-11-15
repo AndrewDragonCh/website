@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../styles/main.module.css'
 import 'animate.css'
 
-export default function Error404() {
+export default function Error500() {
   return (
     <div className={styles.container}>
       <Header pageTitle="Error 500" />
