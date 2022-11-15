@@ -46,12 +46,18 @@ export default function Document() {
         <Main />
         <NextScript />
         <script dangerouslySetInnerHTML={{
-          __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
-        }} />
+          __html: `<noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+          </noscript>`,
+        }} 
+        />
         <script id="statcounter-config" strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-          __html: `var sc_project=12808997;var sc_invisible=1;var sc_security="25afffe2";`
-          }} />
+          __html: `var sc_project=12808997;
+          var sc_invisible=1;
+          var sc_security="25afffe2";`
+          }} 
+        />
         <script id="statcounter-script" strategy="afterInteractive"
         src="https://www.statcounter.com/counter/counter.js" async />
         <noscript id="statcounter-noscript">
