@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
+import Image from 'next/image'
 
 export default function Document() {
   return (
@@ -32,42 +33,33 @@ export default function Document() {
         <link rel="icon" href="https://cdn.andrewdragon.dev/favicon.ico" />
         <link rel='shortcut icon' href='https://cdn.andrewdragon.dev/favicon.ico' />
         <link rel='manifest' href='/manifest.webmanifest' />
-        <script
-          dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PWGKXT9');</script>`,
-          }} />
+        <Script id='google-tag-manager'>
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWGKXT9');`}
+        </Script>
       </Head>
       <body>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER"></script>
         <Main />
         <NextScript />
-        <script dangerouslySetInnerHTML={{
-          __html: `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`,
+        <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='afterInteractive' />
+        <noscript dangerouslySetInnerHTML={{
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         }} />
-        <script id="statcounter-config" strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
+        <noscript id="statcounter-config" strategy="afterInteractive" dangerouslySetInnerHTML={{
+        __html: `
+        var sc_project=12808997;
+        var sc_invisible=1;
+        var sc_security="25afffe2";`
+        }} />
+        <script id="statcounter-script" strategy="afterInteractive" src="https://www.statcounter.com/counter/counter.js" async />
+        <noscript id="statcounter-noscript" dangerouslySetInnerHTML={{
           __html: `
-          var sc_project=12808997;
-          var sc_invisible=1;
-          var sc_security="25afffe2";`
-          }} />
-        <script id="statcounter-script" strategy="afterInteractive"
-        src="https://www.statcounter.com/counter/counter.js" async />
-        <noscript id="statcounter-noscript">
           <div className="statcounter">
-            <a title="Web Analytics" href="https://statcounter.com/" target="_blank"
-            rel="noreferrer">
-              <img className="statcounter"
-              src="https://c.statcounter.com/12808997/0/25afffe2/1/" alt="Web Analytics"
-              referrerPolicy="no-referrer-when-downgrade" />
+            <a title="Web Analytics" href="https://statcounter.com/" target="_blank" rel="noreferrer">
+              <img className="statcounter" src="https://c.statcounter.com/12808997/0/25afffe2/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade" />
             </a>
-          </div>
-        </noscript>
+          </div>`,
+        }} />
       </body>
     </Html>
   )
