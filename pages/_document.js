@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="AndrewDragon - YouTube Streamer and Content Creator" />
         <meta name="keywords" content="youtube, twitch, twitter" />
         <meta name="robots" content="index, follow" />
