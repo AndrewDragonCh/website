@@ -58,7 +58,7 @@ export default function Error404() {
               </Link>
             </p>
             <p className={`${styles.links} animate__animated animate__zoomIn animate__delay-2s`}>
-              <Link href="https://go.andrewdragon.dev/zh1" >
+              <Link href="https://go.andrewdragon.dev/5x6" >
                 MangaDex
               </Link>
             </p>
