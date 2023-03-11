@@ -1,6 +1,12 @@
 import Link from 'next/link'
 import 'animate.css'
 
+let page = "Links"
+
+export const metadata = {
+  title: `${page}`,
+};
+
 export default function Links() {
   return (
     <div className='container'>
