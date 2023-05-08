@@ -16,7 +16,7 @@ export default function Error500() {
         <div className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
           <p className='subtitle animate__animated animate__fadeInUp animate__delay-2s'>
             <Link href="/" >
-              Page Not Found
+              Server Side Error
             </Link>
           </p>
         </div>

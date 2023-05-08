@@ -1,7 +1,8 @@
+import type { AppProps } from 'next/app';
 import { useEffect } from "react"
 import './globals.css'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if("serviceWorker" in navigator) {
       window.addEventListener("load", function () {
@@ -16,11 +17,5 @@ function MyApp({ Component, pageProps }) {
       });
     }
   }, [])
-  return  (
-    <>
-      <Component {...pageProps} />
-    </>
-  )
+  return <Component {...pageProps} />
 }
-
-export default MyApp
