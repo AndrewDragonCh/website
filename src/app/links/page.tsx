@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { Route } from 'next';
 import 'animate.css'
 
 let page = "Links"
@@ -30,37 +31,37 @@ export default function Links() {
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/f45" >
+              <Link href={"https://go.andrewdragon.dev/f45" as Route} >
                 YouTube
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/fyx" >
+              <Link href={"https://go.andrewdragon.dev/fyx" as Route } >
                 Discord
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/pyd" >
+              <Link href={"https://go.andrewdragon.dev/pyd" as Route} >
                 Twitter
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/7mw" >
+              <Link href={"https://go.andrewdragon.dev/7mw" as Route} >
                 GitHub
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/w2o" >
+              <Link href={"https://go.andrewdragon.dev/w2o" as Route} >
                 PcPartPicker
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/zh1" >
+              <Link href={"https://go.andrewdragon.dev/zh1" as Route} >
                 MyAnimeList
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
-              <Link href="https://go.andrewdragon.dev/5x6" >
+              <Link href={"https://go.andrewdragon.dev/5x6" as Route} >
                 MangaDex
               </Link>
             </p>
