@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
-        <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='afterInteractive' />
+        <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='lazyOnload' />
         <noscript dangerouslySetInnerHTML={{
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
