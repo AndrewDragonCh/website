@@ -1,6 +1,6 @@
 // Core assets
 let coreAssets = [
-    'https://cdn.andrewdragon.dev/favicon.ico'
+    'https://static.wyvernaere.com/favicon.ico'
 ];
 
 // On install, cache core assets

@@ -45,8 +45,8 @@ export default function RootLayout({ children }) {
         <meta property='og:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
         <meta property='og:site_name' content='AndrewDragon' />
         <meta property='og:url' content='https://www.andrewdragon.dev/' />
-        <link rel="icon" href="https://cdn.andrewdragon.dev/favicon.ico" />
-        <link rel='shortcut icon' href='https://cdn.andrewdragon.dev/favicon.ico' />
+        <link rel="icon" href="https://static.wyvernaere.com/favicon.ico" />
+        <link rel='shortcut icon' href='https://static.wyvernaere.com/favicon.ico' />
         <link rel='manifest' href='/manifest.webmanifest' />
         <Script id='google-tag-manager'>
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWGKXT9');`}
