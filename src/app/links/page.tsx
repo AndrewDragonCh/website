@@ -42,7 +42,7 @@ export default function Links() {
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
               <Link href={"https://go.andrewdragon.dev/pyd" as Route} >
-                Twitter
+                X/Twitter
               </Link>
             </p>
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
