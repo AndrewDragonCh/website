@@ -1,53 +1,74 @@
 import { Analytics } from '@vercel/analytics/react';
+import { Metadata, Viewport } from 'next'
 import './globals.css'
 import Script from 'next/script'
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://www.andrewdragon.dev'),
   title: {
     default: 'AndrewDragon',
     template: '%s - AndrewDragon'
   },
+  description: 'AndrewDragon - YouTube Streamer and Content Creator',
   generator: 'Next.js',
   applicationName: 'AndrewDragon',
+  creator: 'Andrew Still',
   referrer: 'origin-when-cross-origin',
-  colorScheme: 'dark',
+  manifest: 'https://www.andrewdragon.dev/manifest.json',
+  keywords: ['youtube', 'twitch', 'twitter'],
   formatDetection: {
-    email: 'no',
-    address: 'no',
-    telephone: 'no',
+    email: false,
+    telephone: false,
+    address: false,
+    date: false,
+    url: false,
   },
+  twitter: {
+    card: 'summary',
+    title: 'AndrewDragon',
+    description: 'AndrewDragon - YouTube Streamer and Content Creator',
+    creator: '@AndrewDragonCh'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false
+  },
+  openGraph: {
+    title: 'AndrewDragon',
+    description: 'AndrewDragon - YouTube Streamer and Content Creator',
+    url: 'https://www.andrewdragon.dev/',
+    siteName: 'AndrewDragon',
+    type: 'website',
+    locale: 'en_US'
+  },
+  appleWebApp: {
+    title: 'AndrewDragon',
+    statusBarStyle: 'default',
+    startupImage: [
+      '/icon-512x512.png'
+    ],
+  },
+  icons: {
+    icon: 'https://static.wyvernaere.com/favicon.ico',
+    shortcut: 'https://static.wyvernaere.com/favicon.ico',
+    apple: '/icon-192x192png'
+  }
 };
+
+export const viewport:Viewport = {
+  themeColor: 'black',
+  colorScheme: 'dark',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="AndrewDragon - YouTube Streamer and Content Creator" />
-        <meta name="keywords" content="youtube, twitch, twitter" />
-        <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
-        <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-        <meta name='apple-mobile-web-app-title' content='AndrewDragon' />
-        <link rel='apple-touch-icon' href='/icon-192x192.png' />
-        <meta name='description' content='AndrewDragon - YouTube Streamer and Content Creator' />
-        <meta name='mobile-web-app-capable' content='yes' />
-        <meta name='msapplication-TileColor' content='#FFFFFF' />
-        <meta name='msapplication-tap-highlight' content='no' />
-        <meta name='theme-color' content='#F46904' />
-        <meta name='twitter:card' content='summary' />
-        <meta name='twitter:url' content='https://www.andrewdragon.dev/' />
-        <meta name='twitter:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
-        <meta name='twitter:creator' content='@AndrewDragonCh' />
-        <meta property='og:type' content='website' />
-        <meta property='og:description' content='AndrewDragon - YouTube Streamer and Content Creator' />
-        <meta property='og:site_name' content='AndrewDragon' />
-        <meta property='og:url' content='https://www.andrewdragon.dev/' />
-        <link rel="icon" href="https://static.wyvernaere.com/favicon.ico" />
-        <link rel='shortcut icon' href='https://static.wyvernaere.com/favicon.ico' />
-        <link rel='manifest' href='/manifest.webmanifest' />
         <Script id='google-tag-manager'>
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWGKXT9');`}
         </Script>
