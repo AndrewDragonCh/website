@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Route } from 'next';
 import 'animate.css'
+import { Box } from '@mui/system';
 
 let page = "Links"
 
@@ -10,21 +11,21 @@ export const metadata = {
 
 export default function Links() {
   return (
-    <div className='container'>
-      <main className='main'>
-        <div className='head'>
+    <main>
+      <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="90vh">
+        <Box display="flex" flexDirection="row">
           <h1 className='title animate__animated animate__backInDown'>
             Social
           </h1>
           <h1 className='title orange animate__animated animate__delay-1s animate__fadeInRight'>
             Links
           </h1>
-        </div>
-        <div className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
-          <p className='subtitle animate__animated animate__fadeInUp animate__delay-2s'>
+        </Box>
+        <Box display="flex" flexDirection="column" className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
+          <h2 className='subtitle animate__animated animate__fadeInUp animate__delay-2s'>
             Find me on These Platforms
-          </p>
-          <div className='linkgroup'>
+          </h2>
+          <Box display="grid" gridTemplateColumns="repeat(2, 1fr)" gridTemplateRows="4fr" justifyContent="center" alignItems="center">
             <p className='links animate__animated animate__zoomIn animate__delay-2s'>
               <Link href="/" >
                 My Website
@@ -65,9 +66,9 @@ export default function Links() {
                 MangaDex
               </Link>
             </p>
-          </div>
-        </div>
-      </main>
-    </div>
+          </Box>
+        </Box>
+      </Box>
+    </main>
   )
 }

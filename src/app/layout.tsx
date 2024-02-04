@@ -1,7 +1,13 @@
 import { Analytics } from '@vercel/analytics/react';
-import { Metadata, Viewport } from 'next'
-import './globals.css'
 import Script from 'next/script'
+import { Metadata, Viewport } from 'next'
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
+import getInitColorSchemeScript from "@mui/system/cssVars/getInitColorSchemeScript";
+import { Experimental_CssVarsProvider } from "@mui/material";
+
+import './globals.css'
+
+import Theme from "../providers/ColorMode";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.andrewdragon.dev'),
@@ -57,8 +63,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport:Viewport = {
-  themeColor: 'black',
-  colorScheme: 'dark',
+  colorScheme: 'dark light',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
@@ -66,20 +71,32 @@ export const viewport:Viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
+    <html lang="en">
       <head>
         <Script id='google-tag-manager'>
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWGKXT9');`}
         </Script>
       </head>
       <body>
-        {children}
-        <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='lazyOnload' />
-        <noscript dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-        }} />
-        <Analytics />
+        <AppRouterCacheProvider>
+          <Experimental_CssVarsProvider defaultMode="system">
+            {getInitColorSchemeScript({
+              attribute: "data-mui-color-scheme",
+              modeStorageKey: "mui-mode",
+              colorSchemeStorageKey: "mui-color-scheme",
+              defaultMode: "system",
+            })}
+            <Theme>
+              {children}
+            </Theme>
+            <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='lazyOnload' />
+            <noscript dangerouslySetInnerHTML={{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+            }} />
+            <Analytics />
+          </Experimental_CssVarsProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   )
