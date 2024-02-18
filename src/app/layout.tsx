@@ -4,15 +4,15 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
 import getInitColorSchemeScript from "@mui/system/cssVars/getInitColorSchemeScript";
 import { Experimental_CssVarsProvider } from "@mui/material";
 
-export const runtime = 'edge';
+export const dynamic = 'force-static'
 
 import './globals.css'
 
 import Theme from "../providers/ColorMode";
 
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.andrewdragon.dev'),
-  colorScheme: 'dark light',
   title: {
     default: 'AndrewDragon',
     template: '%s - AndrewDragon'
