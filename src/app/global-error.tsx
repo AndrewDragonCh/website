@@ -17,8 +17,8 @@ export default function GlobalError({
     <html>
       <body>
         <main>
-          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="90vh">
-            <Box display="flex" flexDirection="row">
+          <Box className='main'>
+            <Box className='head'>
               <h1 className='title animate__animated animate__backInDown'>
                 Error
               </h1>
@@ -26,7 +26,7 @@ export default function GlobalError({
                 {error.name}
               </h1>
             </Box>
-            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
+            <Box className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
               <h2 className='subtitle animate__animated animate__fadeInUp animate__delay-2s'>
                 <Link href="/" >
                   {error.message}

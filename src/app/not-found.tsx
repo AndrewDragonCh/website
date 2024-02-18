@@ -5,8 +5,8 @@ import 'animate.css'
 export default function NotFound() {
   return (
     <main>
-      <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="90vh">
-        <Box display="flex" flexDirection="row">
+      <Box className='main'>
+        <Box className='head'>
           <h1 className='title animate__animated animate__backInDown'>
             Error
           </h1>
@@ -14,7 +14,7 @@ export default function NotFound() {
             404
           </h1>
         </Box>
-        <Box display="flex" flexDirection="column" className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
+        <Box className='mainbody animate__animated animate__delay-2s animate__fadeInUp'>
           <h2 className='subtitle animate__animated animate__fadeInUp animate__delay-2s'>
             <Link href="/" >
               Page Not Found
