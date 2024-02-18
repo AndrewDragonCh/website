@@ -1,9 +1,10 @@
-import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script'
 import { Metadata, Viewport } from 'next'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter'
 import getInitColorSchemeScript from "@mui/system/cssVars/getInitColorSchemeScript";
 import { Experimental_CssVarsProvider } from "@mui/material";
+
+export const runtime = 'edge';
 
 import './globals.css'
 
@@ -11,17 +12,17 @@ import Theme from "../providers/ColorMode";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.andrewdragon.dev'),
+  colorScheme: 'dark light',
   title: {
     default: 'AndrewDragon',
     template: '%s - AndrewDragon'
   },
   description: 'AndrewDragon - YouTube Streamer and Content Creator',
-  generator: 'Next.js',
   applicationName: 'AndrewDragon',
   creator: 'Andrew Still',
   referrer: 'origin-when-cross-origin',
   manifest: 'https://www.andrewdragon.dev/manifest.json',
-  keywords: ['youtube', 'twitch', 'twitter'],
+  keywords: ['youtube', 'twitch', 'twitter', 'wyvernaere', 'dragonaere'],
   formatDetection: {
     email: false,
     telephone: false,
@@ -94,7 +95,6 @@ export default function RootLayout({ children }) {
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
               height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             }} />
-            <Analytics />
           </Experimental_CssVarsProvider>
         </AppRouterCacheProvider>
       </body>
