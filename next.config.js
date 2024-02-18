@@ -1,22 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: 'export',
   poweredByHeader: false,
   reactStrictMode: true,
-  swcMinify: true,
-  async headers(){
-    return [
-      {
-        source: '/',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'text/html; charset=utf-8'
-          }
-        ]
-      }
-    ]
-  }
+  swcMinify: true
 }
 
 module.exports = nextConfig
