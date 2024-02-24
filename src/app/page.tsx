@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import { Box } from '@mui/system';
 import 'animate.css'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <main>
+      <Navbar />
       <Box className='main'>
         <Box className='head'>
           <h1 className='title animate__animated animate__backInDown'>
@@ -32,6 +35,7 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </main>
   )
 }

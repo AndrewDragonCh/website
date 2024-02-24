@@ -2,6 +2,8 @@ import Link from 'next/link'
 import type { Route } from 'next';
 import 'animate.css'
 import { Box } from '@mui/system';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 let page = "Links"
 
@@ -12,6 +14,7 @@ export const metadata = {
 export default function Links() {
   return (
     <main>
+      <Navbar />
       <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" minHeight="90vh">
         <Box display="flex" flexDirection="row">
           <h1 className='title animate__animated animate__backInDown'>
@@ -69,6 +72,7 @@ export default function Links() {
           </Box>
         </Box>
       </Box>
+      <Footer />
     </main>
   )
 }
