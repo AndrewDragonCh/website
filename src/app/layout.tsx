@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: 'https://static.wyvernaere.com/favicon.ico',
-    shortcut: 'https://static.wyvernaere.com/favicon.ico',
+    icon: 'https://images.static.dragonaere.com/favicon.ico',
+    shortcut: 'https://images.static.dragonaere.com/favicon.ico',
     apple: '/icon-192x192png'
   }
 };
