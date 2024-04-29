@@ -93,6 +93,7 @@ export default function RootLayout({ children }) {
             }} />
           </Experimental_CssVarsProvider>
         </AppRouterCacheProvider>
+        <Script id='service-worker' src='/service-worker.js' />
       </body>
     </html>
   )
