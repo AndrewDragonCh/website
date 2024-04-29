@@ -55,8 +55,6 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: 'https://images.static.dragonaere.com/favicon.ico',
-    shortcut: 'https://images.static.dragonaere.com/favicon.ico',
     apple: '/icon-192x192png'
   }
 };
