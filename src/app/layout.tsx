@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   applicationName: 'AndrewDragon',
   creator: 'Andrew Still',
   referrer: 'origin-when-cross-origin',
-  manifest: 'https://www.andrewdragon.dev/manifest.json',
+  manifest: '/manifest.json',
   keywords: ['youtube', 'twitch', 'twitter', 'wyvernaere', 'dragonaere'],
   formatDetection: {
     email: false,
