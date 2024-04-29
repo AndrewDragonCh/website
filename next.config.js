@@ -9,7 +9,6 @@ const nextConfig = {
       },
     ],
   },
-  output: 'export',
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
