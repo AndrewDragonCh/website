@@ -70,9 +70,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script id='google-tag-manager'>
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PWGKXT9');`}
-        </Script>
       </head>
       <body>
         <AppRouterCacheProvider>
@@ -86,11 +83,6 @@ export default function RootLayout({ children }) {
             <Theme>
               {children}
             </Theme>
-            <Script id='google-tag-manager' src='https://www.googletagmanager.com/gtag/js?id=G-FX61WB9PER' strategy='lazyOnload' />
-            <noscript dangerouslySetInnerHTML={{
-              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWGKXT9"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-            }} />
           </Experimental_CssVarsProvider>
         </AppRouterCacheProvider>
         <Script id='service-worker' src='/service-worker.js' />

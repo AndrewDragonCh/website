@@ -24,10 +24,6 @@ self.addEventListener('fetch', function (event) {
 	// Get the request
 	let request = event.request;
 
-	// Bug fix
-	// https://stackoverflow.com/a/49719964
-	if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') return;
-
 	// HTML files
 	// Network-first
 	if (request.headers.get('Accept').includes('text/html')) {
