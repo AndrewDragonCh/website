@@ -32,9 +32,10 @@ export default function GlobalError({
                   {error.message}
                 </Link>
               </h2>
-              <p className='animate__animated animate__fadeIn animate__delay-2s'>
-                Please reload and try again. If this continues, please contact me.
-              </p>
+              <button onClick={() => reset()} className='animate__animated animate__fadeIn animate__delay-2s'>
+                Click here to try again. If this continues, please contact me.
+              </button>
+              <p>{error.digest}</p>
             </Box>
           </Box>
         </main>
