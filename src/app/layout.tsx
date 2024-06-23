@@ -7,6 +7,7 @@ import { Experimental_CssVarsProvider } from "@mui/material";
 import './globals.css'
 
 import Theme from "../providers/ColorMode";
+import PlausibleProvider from 'next-plausible';
 
 
 export const metadata: Metadata = {
@@ -70,6 +71,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <PlausibleProvider domain='andrewdragon.dev' trackOutboundLinks={true} taggedEvents={true} />
       </head>
       <body>
         <AppRouterCacheProvider>
