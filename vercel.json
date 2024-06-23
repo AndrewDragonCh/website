@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/js/script.outbound-links.tagged-events.js",
+      "source": "/js/script.js",
       "destination": "https://plausible.andrewstill.moe/js/script.outbound-links.tagged-events.js"
     },
     {
