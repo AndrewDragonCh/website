@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider domain='andrewdragon.dev' trackOutboundLinks={true} taggedEvents={true} />
+        <PlausibleProvider domain='andrewdragon.dev' trackOutboundLinks={true} taggedEvents={true} selfHosted={true} />
       </head>
       <body>
         <AppRouterCacheProvider>
